@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap');
+
+:root{
+    --White: hsl(0, 0%, 100%);
+    --Light-pink: hsl(275, 100%, 97%);
+    --Grayish-purple: hsl(292, 16%, 49%);
+    --Dark-purple: hsl(292, 42%, 14%);
+}
+
+body{
+    font-size: 16px;
+    font-family: 'Work Sans', sans-serif;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: var(--White);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.background-img{
+    /* height: 100%; */
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+
+.card{
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+}
+
+.card-container{
+    background: var(--White);
+    width: 500px;
+    /* height: 500px; */
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.title{
+    height: 120px;
+    display: flex;
+    flex-direction: space-between;
+    align-items: center;
+    justify-content: left;
+}
+
+.star-icon{
+    padding-left: 2rem;
+}
+
+h1{
+    font-weight: 700;
+    font-size: 60px;
+    padding: 0 1rem;
+}
+
+.question-tab{
+    padding: 1rem;
+}
+
+.question{
+    border: 0;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    width: 100%;
+    padding: 10px 0;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+ 
+.content{
+    opacity: 0.6;
+    position: relative;
+    font-weight: 400;
+    text-align: left;
+    height: 0;
+    overflow: hidden;
+    transition: all .6s;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    position: absolute;
+    bottom: 1rem;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
